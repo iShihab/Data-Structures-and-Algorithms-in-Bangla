@@ -2,19 +2,15 @@
 
 using namespace std;
 
-int linear_search(int a[], int arraySize, int searchElement)
+void linear_search(int a[], int arraySize, int searchElement)
 {
     int i;
     for (i = 0; i < arraySize; i++)
     {
         if (a[i] == searchElement)
         {
-            return i;
-        }
-        else
-        {
-            i = -1;
-            return i;
+            cout << "Found at position : " << i << endl;
+            // exit(0);
         }
     }
 }
@@ -27,7 +23,7 @@ int main(int argc, char const *argv[])
     // cout << "Search: ";
     // cin >> search;
     int searchResult = (arr, size, search);
-    cout << searchResult << endl;
+    // cout << searchResult << endl;
     // if (searchResult != -1)
     // {
     //     cout << "Your search element found at position: " << searchResult << endl;

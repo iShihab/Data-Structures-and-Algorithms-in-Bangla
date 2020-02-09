@@ -13,6 +13,7 @@ int linear_search(int a[], int arraySize, int searchElement)
         }
     }
     i = -1;
+    return i;
 }
 int main(int argc, char const *argv[])
 {
@@ -20,6 +21,16 @@ int main(int argc, char const *argv[])
     int size = sizeof(arr) / sizeof(arr[0]);
     int search;
     cout << "Search: " << endl;
+    cin >> search;
+    int searchResult = (arr, size, search);
+    if (searchResult != -1)
+    {
+        cout << "Your search element found at position: " << searchResult + 1 << endl;
+    }
+    else
+    {
+        cout << "Not found!" << endl;
+    }
 
     return 0;
 }

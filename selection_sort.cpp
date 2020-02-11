@@ -2,35 +2,37 @@
 
 using namespace std;
 
-void selection_sort(int a[], int size)
+int selection_sort(int a[], int size)
 {
-    int i, j, min_index;
-    int temp;
+    int i, j, index_min, temp;
     for (i = 0; i < size - 1; i++)
     {
-        min_index = i;
-        for (j = i + 1; j < size; i++)
+        index_min = i;
+        for (j = i + 1; j < size; j++)
         {
-            if (a[j] < a[min_index])
+            if (a[i] > a[j])
             {
-                min_index = j;
+                index_min = j;
             }
         }
-        if (min_index != i)
+        if (index_min != i)
         {
-
             temp = a[i];
-            a[i] = a[min_index];
-            a[min_index] = temp;
+            a[i] = a[index_min];
+            a[index_min] = temp;
         }
     }
 }
 
 int main(int argc, char const *argv[])
 {
-    int a[] = {5, 8, 10, 45, 32, 44};
-    int size = 6;
-    selection_sort(a, size);
+    int arr[] = {8, 2, 14, 18, 14, 65};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    selection_sort(arr, size);
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] << "\t";
+    }
 
     return 0;
 }

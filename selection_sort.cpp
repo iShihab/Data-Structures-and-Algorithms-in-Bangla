@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int selection_sort(int a[], int size)
+void selection_sort(int a[], int size)
 {
     int i, j, index_min, temp;
     for (i = 0; i < size - 1; i++)

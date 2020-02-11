@@ -19,8 +19,8 @@ void selection_sort(int a[], int size)
         {
             int temp;
             temp = a[i];
-            a[i] = a[j];
-            a[j] = temp;
+            a[i] = a[min_index];
+            a[min_index] = temp;
         }
     }
 }
@@ -29,6 +29,11 @@ int main(int argc, char const *argv[])
 {
     int a[] = {5, 8, 10, 45, 32, 44};
     int size = 6;
+    selection_sort(a, size);
+    for (int i = 0; i < 6; i++)
+    {
+        cout << a[i] << "\t";
+    }
 
     return 0;
 }

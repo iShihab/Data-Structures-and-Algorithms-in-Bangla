@@ -21,6 +21,7 @@ int binary_search(int a[], int search, int size)
         }
         else if (search < a[mid])
         {
+            right = mid - 1;
         }
     }
 }
@@ -31,6 +32,7 @@ int main(int argc, char const *argv[])
     int size = 8;
     int search = 19;
     int result = binary_search(a, search, size);
+    cout << "Element found at position: " << result << endl;
 
     return 0;
 }

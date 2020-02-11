@@ -24,6 +24,7 @@ int binary_search(int a[], int search, int size)
             right = mid - 1;
         }
     }
+    return -1;
 }
 
 int main(int argc, char const *argv[])

@@ -11,7 +11,7 @@ void selection_sort(int a[], int size)
         min_index = i;
         for (j = i + 1; j < size; i++)
         {
-            if (a[j] < a[i])
+            if (a[j] < a[min_index])
             {
                 min_index = j;
             }

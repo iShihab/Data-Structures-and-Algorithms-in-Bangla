@@ -5,10 +5,11 @@ using namespace std;
 void selection_sort(int a[], int size)
 {
     int i, j, min_index;
+    int temp;
     for (i = 0; i < size - 1; i++)
     {
         min_index = i;
-        for (j = i + 1; i < size; i++)
+        for (j = i + 1; j < size; i++)
         {
             if (a[j] < a[i])
             {
@@ -17,7 +18,7 @@ void selection_sort(int a[], int size)
         }
         if (min_index != i)
         {
-            int temp;
+
             temp = a[i];
             a[i] = a[min_index];
             a[min_index] = temp;

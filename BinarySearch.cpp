@@ -31,7 +31,7 @@ int main(int argc, char const *argv[])
 {
     int a[] = {1, 4, 6, 7, 10, 19, 22, 23};
     int size = 8;
-    int search = 19;
+    int search = 4;
     int result = binary_search(a, search, size);
     cout << "Element found at position: " << result << endl;
 

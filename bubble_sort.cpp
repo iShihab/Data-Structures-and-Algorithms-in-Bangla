@@ -23,6 +23,11 @@ int main(int argc, char const *argv[])
 {
     int a[] = {12, 14, 2, 42, 67, 4};
     int size = sizeof(a) / sizeof(a[0]);
+    bubble_sort(a, size);
+    for (int i = 0; i < size; i++)
+    {
+        cout << a[i] << " ";
+    }
 
     return 0;
 }

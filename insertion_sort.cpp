@@ -7,7 +7,7 @@ void insertion_sort(int a[], int size)
     int i, j, item;
     for (i = 1; i < size; i++)
     {
-        int item = a[i];
+        item = a[i];
         j = i - 1;
         while (j >= 0 && a[j] > item)
         {
@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
     insertion_sort(a, size);
     for (int i = 0; i < size; i++)
     {
-        cout << "sorted array: " << a[i] << " ";
+        cout << a[i] << " ";
     }
 
     return 0;

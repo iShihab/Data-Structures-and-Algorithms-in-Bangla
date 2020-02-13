@@ -21,7 +21,7 @@ void insertion_sort(int a[], int size)
 int main(int argc, char const *argv[])
 {
 
-    int a[] = {53, 21, 34, 22, 54};
+    int a[] = {5, 4, 2, 5, 1};
     int size = sizeof(a) / sizeof(a[0]);
     insertion_sort(a, size);
     for (int i = 0; i < size; i++)

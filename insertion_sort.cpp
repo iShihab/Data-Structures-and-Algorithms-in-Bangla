@@ -4,20 +4,17 @@ using namespace std;
 
 void insertion_sort(int a[], int size)
 {
-    int i, j, temp;
+    int i, key, j;
     for (i = 1; i < size; i++)
     {
+        key = a[i];
         j = i - 1;
-        while (j >= 0)
+        while (j >= 0 && a[j] > key)
         {
-            if (a[i] < a[j])
-            {
-                temp = a[j];
-                a[j] = a[i];
-                a[i] = temp;
-            }
-            j--;
+            a[j + 1] = a[j];
+            j = j - 1;
         }
+        a[j + 1] = key;
     }
 }
 
